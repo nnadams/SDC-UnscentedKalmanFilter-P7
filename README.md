@@ -1,4 +1,7 @@
-# Unscented Kalman Filter Project Starter Code
+# Unscented Kalman Filter Project
+
+![](/mnt/win/files/projects/SelfDrivingCars/KalmanFilters/CarND-Unscented-Kalman-Filter-Project/example.gif)
+
 Self-Driving Car Engineer Nanodegree Program
 
 In this project utilize an Unscented Kalman Filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower that the tolerance outlined in the project rubric. 
@@ -40,7 +43,16 @@ OUTPUT: values provided by the c++ program to the simulator
 
 ---
 
+#Catching a Car
+
+The bonus/ folder contains the runaway car project. This project uses the UKF to chase and overtake another vehicle over a short distance. Both cars move at the same speed, and thus the UKF is used to predict where the other car will be and meet it, rather than simply following its path.
+
+![](/mnt/win/files/projects/SelfDrivingCars/KalmanFilters/CarND-Unscented-Kalman-Filter-Project/chase.gif)
+
+
+
 ## Other Important Dependencies
+
 * cmake >= 3.5
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
 * make >= 4.1 (Linux, Mac), 3.81 (Windows)
@@ -51,6 +63,10 @@ OUTPUT: values provided by the c++ program to the simulator
   * Linux: gcc / g++ is installed by default on most Linux distros
   * Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
+
+A pre-built docker container with batteries included can be started with:
+
+``docker run -it -p 4567:4567 -v `pwd`:/work udacity/controls_kit:latest``
 
 ## Basic Build Instructions
 
