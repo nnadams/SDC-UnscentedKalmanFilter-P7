@@ -1,6 +1,6 @@
 # Unscented Kalman Filter Project
 
-![](/mnt/win/files/projects/SelfDrivingCars/KalmanFilters/CarND-Unscented-Kalman-Filter-Project/example.gif)
+![](example.gif)
 
 Self-Driving Car Engineer Nanodegree Program
 
@@ -43,11 +43,11 @@ OUTPUT: values provided by the c++ program to the simulator
 
 ---
 
-#Catching a Car
+## Catching a Car
 
 The bonus/ folder contains the runaway car project. This project uses the UKF to chase and overtake another vehicle over a short distance. Both cars move at the same speed, and thus the UKF is used to predict where the other car will be and meet it, rather than simply following its path.
 
-![](/mnt/win/files/projects/SelfDrivingCars/KalmanFilters/CarND-Unscented-Kalman-Filter-Project/chase.gif)
+![](chase.gif)
 
 
 
